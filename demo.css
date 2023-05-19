@@ -1,0 +1,47 @@
+.pag-net{ 
+
+position:relative;
+   left:600px;
+}
+
+
+.my-body{
+  background-color: antiquewhite;
+}
+.my-about{
+
+
+  position:relative;
+   bottom:250px;
+   font-size:150px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   left:600px;
+   font-style: italic;
+   font-stretch: extra-expanded;
+  
+
+}
+.your-about{
+
+  position:relative;
+  bottom:100px;
+  font-size:30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  left:100px;
+  font-style: italic;
+  font-stretch: extra-expanded;
+
+}
+.my-article{
+
+
+  position:relative;
+   bottom:250px;
+   font-size:150px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   left:600px;
+   font-style: italic;
+   font-stretch: extra-expanded;
+  
+
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+  <link href="demo.css" rel="stylesheet" />
+  <title>bootstrap demo</title>
+
+
+</head>
+
+<body class="my-body">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+  <!--NAVAGATION BAR-->
+  <header>
+    <div class="px-3 py-2 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="#" class="nav-link text-secondary">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#home"></use>
+                </svg>
+
+              </a>
+            </li>
+            <li>
+              <a href="demo.web.html" class="nav-link text-white">
+                <img src="icons/home.png" class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#speedometer2"></use>
+
+                HOME
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link text-white">
+                <img src="icons/disp.png" class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#table"></use>
+
+                ABOUT
+              </a>
+            </li>
+            <li>
+              <a href="blog.html" class="nav-link text-white">
+                <img src="icons/analyse.png" class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#grid"></use>
+
+                BLOG
+              </a>
+            </li>
+            <li>
+              <a href="artricles.html" class="nav-link text-white">
+                <img src="icons/heart.png" class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#people-circle"></use>
+
+                ARTICLES
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-light  text-dark  me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signinModal"  >Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+<!-- login   Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">LOG IN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+    
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+           
+            
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- sign in modal-->
+
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signinModalLabel">SIGN IN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+    
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">user name </label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">create password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">confirm password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+           
+            
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+         
+
+
+  <!--CAROUSEL-->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-dark carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/na.jpg" class="d-block" width="1600" height="500" />
+        <div class="carousel-caption d-none d-md-block">
+          <button class="btn btn-dark">ABIOTIC</button>
+          <button class="btn btn-success">BIOTIC</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/mu.jpg" class="d-block" width="1600" height="500" />
+        <div class="carousel-caption d-none d-md-block">
+          <button class="btn btn-dark">ABIOTIC</button>
+          <button class="btn btn-success">BIOTIC</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/ma.jpg" class="d-block" width="1600" height="500" />
+        <div class="carousel-caption d-none d-md-block">
+          <button class="btn btn-dark">ABIOTIC</button>
+          <button class="btn btn-success">BIOTIC</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <!--BLOG-->
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">THOROUGHLY INVESTIGATED</strong>
+            <h3 class="mb-0">MICROORGANISM</h3>
+            <div class="mb-1 text-body-secondary">may 20</div>
+            <p class="card-text mb-auto">
+              Microorganisms, also known as microbes, are small living
+              organisms that are too tiny to be seen with the naked eye. They
+              are found in almost every environment on Earth, including soil,
+              water, air, and living organisms. Microorganisms play important
+              roles in many natural and human-related processes, and they come
+              in a wide variety of shapes and forms. Some common types of
+              microorganisms include: Bacteria: single-celled organisms that
+              can be found in a variety of habitats and play important roles
+              in nutrient cycling, decomposition, and food production.
+              Archaea: single-celled organisms that are found in extreme
+              environments, such as hot springs, and have unique metabolic
+              processes. Fungi: a diverse group of organisms that include
+              molds, yeasts, and mushrooms. Fungi play important roles in
+              decomposition, nutrient cycling, and food production. Protists:
+              a diverse group of unicellular or multicellular organisms that
+              include algae, amoebas, and paramecia.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="350" src="images/tn.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">THOROUGHLY INVESTIGATED</strong>
+            <h3 class="mb-0">BIODIVERSITY</h3>
+            <div class="mb-1 text-body-secondary">may 20</div>
+            <p class="mb-auto">
+              Biodiversity: Ecosystems support a diverse array of species.
+              Biodiversity within an ecosystem is important as it contributes
+              to the stability and resilience of the system. Energy Flow:
+              Ecosystems are powered by the flow of energy. Sunlight is the
+              primary source of energy, which is converted into chemical
+              energy through photosynthesis by plants. This energy is then
+              transferred through the food chain as organisms consume each
+              other. Trophic Levels
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="300" height="250" src="images/tn (2).jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">EXHAUSTIVELY INVESTIGATED</strong>
+            <h3 class="mb-0">ENERGY FLOW</h3>
+            <div class="mb-1 text-body-secondary">may 25</div>
+            <p class="card-text mb-auto">
+              Energy flows through an ecosystem in a unidirectional manner.
+              Producers, such as plants and algae, convert sunlight into
+              chemical energy through photosynthesis. This energy is then
+              transferred to consumers (herbivores, carnivores, omnivores) as
+              they feed on other organisms. Decomposers break down organic
+              matter, releasing nutrients back into the ecosystemAz
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="images/tn (5).jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">EXHAUSTIVELY INVESTIGATED</strong>
+            <h3 class="mb-0">NUTRIENT CYCLING</h3>
+            <div class="mb-1 text-body-secondary">may 20</div>
+            <p class="mb-auto">
+              Nutrient Cycling Nutrients, such as carbon, nitrogen,
+              phosphorus, and others, are cycled through ecosystems.
+              Decomposers play a crucial role in breaking down dead organisms
+              and waste, returning nutrients to the soil or water for reuse by
+              other organisms Nutrient Cycling Nutrients, such as carbon,
+              nitrogen, phosphorus, and others, are cycled through ecosystems.
+              Decomposers play a crucial role in breaking down dead organisms
+              and waste, returning nutrients to the soil or water for reuse by
+              other organismsNutrient Cycling Nutrients, such as carbon,
+              nitrogen, phosphorus, and others, are cycled through ecosystems.
+              Decomposers play a crucial role in breaking down dead organisms
+              and waste, returning nutrients to the soil or water for reuse by
+              other organisms
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="300" src="images/tn (4).jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--PAGINATION-->
+  <div class="pag-net">
+    <footer>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="demo.web.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="page3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="index.html"> click me</a>
+
+
+
+
+
+
+  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    <p>© 2024 /ENVIRONMENT/ CORPORATION LIMITED .ALL RIGHTS ARE RESERVED.<BR>
+      CREATED AND DEVELOPED BY--sheikh  sohan--
+    </p>
+    <ul class="list-unstyled d-flex">
+      <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/sheikh_sohan19/"><img
+            src="icons/insta.png" class="bi" width="24" height="24">
+          <use xlink:href="https://www.instagram.com/sheikh_sohan19/"></use></svg>
+        </a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="icons/fb.png" class="bi" width="24" height="24">
+          <use xlink:href="#instagram"></use></svg>
+        </a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="icons/linked in.png" class="bi" width="24"
+            height="24">
+          <use xlink:href="#instagram"></use></svg>
+        </a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="icons/mail.png" class="bi" width="24"
+            height="24">
+          <use xlink:href="#instagram"></use></svg>
+        </a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="icons/twitter.png" class="bi" width="24"
+            height="24">
+          <use xlink:href="#instagram"></use></svg>
+        </a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="https://wa.me/16307410934"><img src="icons/wp.png" class="bi"
+            width="24" height="24">
+          <use xlink:href="https://wa.me/16307410934"></use></svg>
+        </a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
